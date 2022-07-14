@@ -1,0 +1,9 @@
+<div class="slide-content-to-center-wrapper" inViewport [inViewportOptions]="{ threshold: [0] }"
+  (inViewportAction)="slideContent($event, content)">
+  <div [ngClass]="textStyleClass" class="flex-wrapper flex-column top-marginned bottom-marginned" #content>
+    <h1>{{title}}</h1>
+    <div class="wrapper text">
+      <p [ngClass]="textStyleClass" *ngFor="let textRow of textRows">{{textRow}}</p>
+    </div>
+  </div>
+</div>

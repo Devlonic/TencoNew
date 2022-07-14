@@ -1,0 +1,7 @@
+<div class="flex-wrapper flex-column">
+  <h2>10 EXCLUSIVE BENEFITS</h2>
+  <p>Through our TENco membership, members gain access to ten core benefits: each one carefully designed to help them
+    live their life to the fullest.</p>
+  <app-tenco-numered-list-text-item *ngFor="let item of items; index as pos" [text]="item.text" [title]="item.title"
+    [number]="pos+1"></app-tenco-numered-list-text-item>
+</div>

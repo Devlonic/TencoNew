@@ -1,0 +1,15 @@
+<div class="full-wrapper flex-wrapper">
+  <div class="flex-wrapper flex-column" [ngClass]="{'left': isLeft, 'right': isRight}">
+    <div class="wrapper">
+      <h3>{{title}}</h3>
+    </div>
+    <p>{{text}}</p>
+    <div class="calendar" [ngClass]="{'left-calendar': isLeft, 'right-calendar': isRight}">
+      <span class="material-symbols-outlined">calendar_month</span>
+    </div>
+    <div class="peak" [ngClass]="{'left-peak': isLeft, 'right-peak': isRight}"></div>
+    <div [ngClass]="{'left-text': isLeft, 'right-text': isRight}" class="date">
+      <span>{{date}}</span>
+    </div>
+  </div>
+</div>

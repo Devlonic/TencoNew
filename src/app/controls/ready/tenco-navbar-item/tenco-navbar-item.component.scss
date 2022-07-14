@@ -1,0 +1,51 @@
+.wrapper {
+
+  a::before,
+  a::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.25em;
+  }
+
+  .active::before,
+  .active::after {
+    background-color: #D4AA00;
+  }
+
+  .inactive:before,
+  .inactive::after {
+    background-color: #D4AA00;
+    transition: 250ms;
+    opacity: 0;
+  }
+
+  .inactive::before {
+    bottom: 1em;
+  }
+
+  .inactive::after {
+    top: 1em;
+  }
+
+  .inactive:hover::before {
+    opacity: 1;
+    bottom: 0em;
+  }
+
+  .inactive:hover::after {
+    opacity: 1;
+    top: 0em;
+  }
+
+  a {
+    display: block;
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+
+    .wrapper {
+      padding: 0.8em 1.4em;
+    }
+  }
+}

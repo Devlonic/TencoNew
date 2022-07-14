@@ -1,0 +1,25 @@
+.flex-wrapper {
+  background-color: #F2F2F2;
+
+  .flex-wrapper {
+    flex-direction: column;
+
+    h3 {
+      margin-top: 2em;
+    }
+
+    ul {
+      margin-top: 2em;
+      list-style-type: none;
+
+      li {
+        float: left;
+        margin: 0 0.5em;
+      }
+    }
+
+    p {
+      margin: 5em 0 2em;
+    }
+  }
+}

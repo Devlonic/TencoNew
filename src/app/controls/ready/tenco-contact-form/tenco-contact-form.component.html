@@ -1,0 +1,34 @@
+<div class="flex-wrapper flex-column element-wrapper">
+  <!-- header -->
+  <app-tenco-slided-text [ngClass]="'formstyle'" [needToSlide]="false" [title]="'CONNECT WITH US'"
+    [textRows]="['Ready to be a part of the exclusive TENco family or need more information? Please kindly fill out this form, and we will set-up an in-person presentation of our benefits.']">
+  </app-tenco-slided-text>
+
+  <!-- form -->
+  <div class="form-wrapper">
+    <form>
+      <div class="row flex-wrapper">
+        <input placeholder="Mr, Ms, Mrs..." type="text" name="appeal">
+        <input placeholder="First Name" type="text" name="firstname">
+        <input placeholder="Last Name" type="text" name="lastname">
+      </div>
+      <div class="row flex-wrapper">
+        <input placeholder="Email" type="email" name="email">
+        <input placeholder="Phone" type="tel" name="phone">
+      </div>
+      <div class="row flex-wrapper">
+        <input placeholder="Company" type="text" name="company">
+        <input placeholder="City of residence" type="text" name="city">
+      </div>
+      <div class="row flex-wrapper">
+        <input placeholder="How did you hear about us?" type="text" name="userheardaboutus">
+      </div>
+      <div class="row flex-wrapper">
+        <textarea placeholder="Message" name="message"></textarea>
+      </div>
+      <div class="flex-center flex-wrapper bottom-marginned">
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+</div>

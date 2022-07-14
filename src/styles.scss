@@ -1,1 +1,201 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-family: sans-serif;
+
+  color: rgb(35, 35, 35);
+
+  ::selection {
+    color: white;
+    background-color: black;
+  }
+}
+
+// wrappers 
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: block;
+}
+
+.page-wrapper {
+  overflow: hidden;
+}
+
+.top-marginned {
+  margin-top: 6em;
+}
+
+.bottom-marginned {
+  margin-bottom: 6em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.black-text {
+  color: rgb(35, 35, 35);
+}
+
+.white-text {
+  color: white;
+}
+
+.bold-small-text {
+  font-weight: bold;
+  color: black;
+  margin: 0 0 8% 0;
+}
+
+.golden-small-text {
+  color: #D4AA00;
+  margin: 8% 0 2.5em 0;
+}
+
+.fullscreenstyle {
+  h1 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.formstyle {
+  text-align: left;
+  width: 40em;
+
+  h1 {
+    color: white;
+  }
+
+  p {
+    font-size: 1.25em;
+    color: white;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  font-family: times;
+  font-size: 2.25em;
+  letter-spacing: -0.02em;
+}
+
+.golden-text {
+  font-size: 15em;
+  color: #F0E0A2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 100;
+
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+
+}
+
+p {
+  font-family: Times;
+  font-size: 1.2em;
+  margin: 2em 0;
+}
+
+
+button {
+  background-color: transparent;
+  color: #D4AA00;
+  border: 0.125em solid #D4AA00;
+  border-radius: 0.2em;
+  padding: 0.6em 1.2em;
+  transition: 200ms;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+button[type='submit'] {
+  color: white;
+  padding: 0.8em 4em;
+  border: 0.2em solid white;
+  border-radius: 0;
+}
+
+button[type='submit']:hover {
+  background-color: white;
+  font-size: 1.2em;
+  color: black;
+  border: 0.2em solid white;
+}
+
+input,
+textarea {
+  transition: 500ms;
+  font-family: times;
+  font-size: 1.1em;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.1em solid white;
+  padding: 1em;
+  outline: 0;
+}
+
+
+
+button:hover {
+  background-color: #D4AA00;
+  border: 0.125em solid #D4AA00;
+
+  color: white;
+}
+
+button:active {
+  background-color: #dabd49;
+  border: 0.125em solid #dabd49;
+  color: white;
+}
+
+
+// icons
+.fa {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: #D4AA00;
+}

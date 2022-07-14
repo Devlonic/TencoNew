@@ -1,0 +1,11 @@
+<div class="wrapper" (mouseover)="mouseoverFront(front, back)" (mouseleave)="mouseleave(front, back)">
+  <div class="flex-wrapper flex-column front" #front>
+    <div class="content"></div>
+    <img src={{backgroundUrl}}>
+  </div>
+  <div class="flex-wrapper flex-column back" #back>
+    <h3>{{backTitle}}</h3>
+    <p>{{backText}}</p>
+    <button>Learn more</button>
+  </div>
+</div>

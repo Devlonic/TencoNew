@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <a routerLink={{navigation}} #rla="routerLinkActive" routerLinkActive
+    [ngClass]="rla.isActive ? 'active' : 'inactive'">
+    <div class="wrapper">
+      <span>{{title}}</span>
+    </div>
+  </a>
+</div>

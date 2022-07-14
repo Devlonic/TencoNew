@@ -1,0 +1,29 @@
+.element-wrapper {
+  position: relative;
+}
+
+.element-wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.2);
+  background-image: url('./../../../assets/imgs/bg/forms-background.jpg');
+}
+
+.form-wrapper {
+  z-index: 100;
+}
+
+.row {
+  justify-content: space-between;
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 1em;
+  }
+
+  button {}
+}

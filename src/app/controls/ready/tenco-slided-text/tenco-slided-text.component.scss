@@ -1,0 +1,28 @@
+.slide-content-to-center-wrapper {
+
+  .flex-wrapper {
+    transition: 1.5s;
+    position: relative;
+    left: -100vw;
+  }
+
+  .slided {
+    left: 0vw;
+  }
+}
+
+.flex-wrapper {
+  transition: 2s;
+
+  h1 {
+    max-width: 15em;
+    margin-bottom: 0.7em;
+
+  }
+
+  .text {
+    text-align: center;
+    max-width: 60em;
+
+  }
+}

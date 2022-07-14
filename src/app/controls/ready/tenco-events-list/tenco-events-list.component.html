@@ -1,0 +1,12 @@
+<div #parent class="flex-wrapper flex-column top-marginned" (mouseenter)="elementMouseEnterHandler()"
+  (mouseleave)="elementMouseLeaveHandler()">
+  <h2>2022 EVENTS</h2>
+  <div class="flex-wrapper flex-column event-list">
+    <div class="scroll-line-outter" #scrollLineOut>
+      <div style="height: 0px;" class="scroll-line-inner" #scrollLine></div>
+    </div>
+    <app-tenco-event-item [isLeft]="isLeft" [isRight]="isRight" [title]="item.title" [text]="item.text"
+      [date]="item.date" *ngFor="let item of items; odd as isLeft; even as isRight">
+    </app-tenco-event-item>
+  </div>
+</div>
